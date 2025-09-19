@@ -1,5 +1,3 @@
-This is a Symfony project for event registrations, exposed as an API only with no dedicated UI.
-Interactive documentation is available via NelmioApiDoc at the /api/doc
- route, configured with Swagger UI.
-For authenticated endpoints using session cookies, Swagger UI’s Try it out cannot perform requests due to browser restrictions, so HTTPie was used for testing instead.
-To seed test data, a lightweight Foundry factory and seeder are included and can be executed with: php bin/console foundry:load-fixtures main
+This is a Symfony project where users can register for events. There is no UI, but by default it can be tested with the Nelmio bundle at the /api/doc URL. I mainly used HTTPie, because Swagger unfortunately cannot handle operations that require authentication when it comes to session cookies. To help with testing, there is also a simple factory and seeder, which can be run with the command: php bin/console foundry:load-fixtures main
+
+
